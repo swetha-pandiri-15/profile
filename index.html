@@ -4,270 +4,97 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Swetha Pandiri — Portfolio</title>
-  <meta name="description" content="Finance systems & analytics leader. Building mindful automation, CFO-ready dashboards, and data governance frameworks."/>
-  <meta property="og:title" content="Swetha Pandiri — Portfolio"/>
-  <meta property="og:description" content="Finance systems & analytics leader. Building mindful automation, CFO-ready dashboards, and data governance frameworks."/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:image" content="/assets/og.jpg"/>
-  <meta name="theme-color" content="#0f172a" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="Swetha Pandiri — Finance Systems Manager leading reporting, automation, and analytics initiatives."/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0b1020; /* slate-950 */
-      --card:#0e162f; /* slate-900 */
-      --muted:#94a3b8; /* slate-400 */
-      --text:#e5e7eb; /* gray-200 */
-      --brand:#60a5fa; /* blue-400 */
-      --accent:#a78bfa; /* violet-400 */
-      --ring:#1e293b; /* slate-800 */
-      --ok:#34d399; /* emerald */
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b1020 0%,#0b1020 40%,#0f1b3c 100%);color:var(--text)}
-    a{color:var(--brand);text-decoration:none}
+    body{margin:0;font-family:Inter,system-ui,sans-serif;background:#0b1020;color:#e5e7eb}
+    a{color:#60a5fa;text-decoration:none}
     a:hover{text-decoration:underline}
     .wrap{max-width:1000px;margin:0 auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
-    .nav a{margin:0 10px;color:var(--muted)}
-    .nav a:hover{color:var(--text)}
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:40px 0}
-    .tag{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ring);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted);backdrop-filter:blur(6px);background:rgba(255,255,255,.02)}
-    h1{font-size:44px;line-height:1.1;margin:14px 0 10px;font-weight:800}
-    .lead{color:var(--muted);font-size:18px;line-height:1.6}
-    .cta{margin-top:18px;display:flex;flex-wrap:wrap;gap:12px}
-    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:14px;border:1px solid var(--ring);background:rgba(255,255,255,.03)}
-    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--accent));color:#0b1020;border:none;font-weight:700}
-    .btn:hover{transform:translateY(-1px)}
-    .card{border:1px solid var(--ring);background:rgba(255,255,255,.03);border-radius:18px;padding:18px}
-    section{padding:26px 0}
-    h2{font-size:26px;margin:0 0 12px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .proj{display:flex;flex-direction:column;gap:10px}
-    .pill{display:inline-flex;gap:8px;flex-wrap:wrap}
-    .pill span{border:1px dashed var(--ring);color:var(--muted);font-size:12px;padding:4px 8px;border-radius:999px}
-    .meta{color:var(--muted);font-size:14px}
-    .footer{border-top:1px solid var(--ring);margin-top:28px;padding-top:18px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-    .filters{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 16px}
-    .chip{padding:6px 10px;border-radius:999px;border:1px solid var(--ring);cursor:pointer;background:rgba(255,255,255,.02);color:var(--muted)}
-    .chip.active{background:rgba(96,165,250,.15);color:#cfe5ff;border-color:#334155}
-    .note{font-size:13px;color:var(--muted)}
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .avatar{width:140px;height:140px;border-radius:20px;border:1px solid var(--ring);background:linear-gradient(135deg,#1f2937,#0f172a);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:46px}
-    .kudos{display:flex;gap:10px;align-items:center;color:#c8ffe1}
-    .kudos svg{width:18px;height:18px}
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .grid{grid-template-columns:1fr 1fr}
-      .two{grid-template-columns:1fr}
-    }
-    @media (max-width:640px){
-      .grid{grid-template-columns:1fr}
-      h1{font-size:34px}
-    }
+    header{display:flex;justify-content:space-between;align-items:center}
+    nav a{margin:0 10px;color:#94a3b8}
+    nav a:hover{color:#e5e7eb}
+    h1{font-size:40px;margin:0}
+    h2{font-size:28px;margin-top:40px;margin-bottom:10px}
+    .card{border:1px solid #1e293b;background:#111827;border-radius:12px;padding:16px;margin-bottom:16px}
+    .meta{color:#94a3b8;font-size:14px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media(max-width:700px){.grid{grid-template-columns:1fr}}
+    footer{margin-top:40px;padding-top:16px;border-top:1px solid #1e293b;color:#94a3b8}
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Swetha Pandiri",
-    "jobTitle": "Manager, FP&A Business Systems",
-    "worksFor": {"@type":"Organization","name":"Kaiser Aluminum"},
-    "url": "https://your-username.github.io/",
-    "sameAs": [
-      "https://www.linkedin.com/in/your-linkedin/",
-      "https://scholar.google.com/your-profile"
-    ]
-  }
-  </script>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="tag">🧭 Mindful Automation • Finance Systems</div>
-      <nav class="nav">
-        <a href="#projects">Projects</a>
-        <a href="#writing">Publications</a>
+      <h1>Swetha Pandiri</h1>
+      <nav>
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <section class="hero">
-      <div>
-        <h1>Swetha Pandiri</h1>
-        <p class="lead">Finance systems & analytics leader helping CFOs move from reactive reporting to decision intelligence. I build <strong>CFO-ready dashboards</strong>, <strong>data governance</strong> practices, and <strong>automation</strong> that actually sticks.</p>
-        <div class="cta">
-          <a class="btn primary" href="#projects">View Projects ↓</a>
-          <a class="btn" href="/Swetha_Pandiri_Resume.pdf" download>Download Résumé</a>
-          <button class="btn" id="copyEmail">Copy Email</button>
-        </div>
-        <p class="note">Actively writing on CFO.com & Strategic Finance • HTA for MBA 562</p>
-      </div>
-      <div style="display:flex;gap:16px;align-items:center;justify-content:center">
-        <div class="avatar">SP</div>
-        <div class="card" style="min-width:260px">
-          <div class="kudos">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z" stroke="currentColor" stroke-width="1.2"/></svg>
-            <strong>Featured:</strong> CFO.com · Strategic Finance
-          </div>
-          <div class="meta">Built AP/AR/Procurement/Cash dashboards used by execs; creator of the <em>Purpose Chain</em> framework.</div>
-        </div>
+    <section id="about">
+      <h2>About</h2>
+      <div class="card">
+        <p>Swetha Pandiri is a Financial Systems Manager at Kaiser Aluminum, where she leads enterprise reporting and automation initiatives. She bridges finance strategy with technology execution, designing scalable solutions that transform manual processes into insight-driven systems, enabling finance to shift from reactive reporting to strategic decision-making.</p>
+        <p class="meta">Career Timeline:</p>
+        <ul>
+          <li>Financial Data Analyst at Deloitte (2018–2022)</li>
+          <li>Masters in Business Analytics, University of Illinois Urbana-Champaign (2023)</li>
+          <li>FP&A Business Systems Manager — Kaiser Aluminum (2023–Present)</li>
+        </ul>
       </div>
     </section>
 
     <section id="projects">
-      <h2>Highlighted Projects</h2>
-      <div class="filters">
-        <button class="chip active" data-filter="all">All</button>
-        <button class="chip" data-filter="dashboards">Dashboards</button>
-        <button class="chip" data-filter="automation">Automation</button>
-        <button class="chip" data-filter="governance">Data Governance</button>
-        <button class="chip" data-filter="writing">Writing</button>
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Airbnb Host Analysis</h3>
+        <p>Analyzed Airbnb listings in the US using Tableau to identify factors influencing pricing, and built a regression-based predictive model in R for estimating the price of new listings with 93% accuracy.</p>
+        <a href="https://public.tableau.com/app/profile/swetha.pandiri/viz/Airbnb_Host_Analysis_Group5/AirbnbHostAnalysis" target="_blank">View Project →</a>
       </div>
-      <div class="grid" id="projectGrid">
-        <!-- Project Card 1 -->
-        <article class="card proj" data-tags="dashboards automation">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <strong>AP Intelligence Dashboard</strong>
-            <span class="pill"><span>Power BI</span><span>Oracle GL</span><span>DAX</span></span>
-          </div>
-          <p class="meta">Top-down breakdown of AP balance into invoices, accruals, and RNI; DPO tracking; vendor/entity toggles; ties insights to cash forecasting.</p>
-          <div class="pill"><span>Exec-ready</span><span>Drill-through</span><span>Fabric Bronze→Gold</span></div>
-        </article>
-        <!-- Project Card 2 -->
-        <article class="card proj" data-tags="dashboards governance">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <strong>CFO Morning Scorecard</strong>
-            <span class="pill"><span>Power BI</span><span>SQL</span><span>Fabric</span></span>
-          </div>
-          <p class="meta">One-page executive view with liquidity, bookings, EBITDA, and alerts; parameter-driven drill-downs to plants and cost centers.</p>
-          <div class="pill"><span>1-page snapshot</span><span>Alerts</span><span>Governance</span></div>
-        </article>
-        <!-- Project Card 3 -->
-        <article class="card proj" data-tags="automation governance">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <strong>Mindful Automation — Purpose Chain</strong>
-            <span class="pill"><span>Framework</span><span>Playbook</span></span>
-          </div>
-          <p class="meta">Framework ensuring clarity, stakeholder alignment, and decision relevance before building—used to de-risk automation projects.</p>
-          <div class="pill"><span>Change Mgmt</span><span>Repeatable</span></div>
-        </article>
-        <!-- Project Card 4 -->
-        <article class="card proj" data-tags="writing">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <strong>Published: CFO.com</strong>
-            <span class="pill"><span>Article</span></span>
-          </div>
-          <p class="meta">“The CFO’s Playbook for Fixing Fragmented Reporting” — practical steps to stabilize reporting and build decision intelligence.</p>
-          <a href="#" aria-label="CFO.com article link">Read summary →</a>
-        </article>
-        <!-- Project Card 5 -->
-        <article class="card proj" data-tags="writing governance">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <strong>Published: Strategic Finance</strong>
-            <span class="pill"><span>Article</span></span>
-          </div>
-          <p class="meta">“What It Really Takes to Make Finance Automation Drive Change” — case study + Deming cycle; editor-approved for publication.</p>
-          <a href="#" aria-label="Strategic Finance article link">Read summary →</a>
-        </article>
-        <!-- Project Card 6 -->
-        <article class="card proj" data-tags="dashboards automation">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <strong>CapEx Portfolio View</strong>
-            <span class="pill"><span>SQL</span><span>Power BI</span><span>Oracle</span></span>
-          </div>
-          <p class="meta">Consolidated view of CapEx projects across Oracle GL/PA/Maximo; plant-level drilldowns; actuals vs. budget tracking.</p>
-          <div class="pill"><span>PA_PROJECTS</span><span>GL_JE_LINES</span><span>Maximo</span></div>
-        </article>
+      <div class="card">
+        <h3>Humana-Mays Healthcare Analytics Case Competition</h3>
+        <p>Ranked among the Top 50 teams in the US for implementing an XGBoost model with 87% accuracy to predict Medicare members at risk of housing insecurity. Balanced quantitative modeling with qualitative objectives to maximize business and societal value.</p>
+        <a href="https://mays.tamu.edu/humana-tamu-analytics/round-1-results/" target="_blank">Learn More →</a>
       </div>
     </section>
 
-    <section id="writing">
+    <section id="publications">
       <h2>Publications & Talks</h2>
-      <div class="two">
-        <div class="card">
-          <ul>
-            <li><strong>CFO.com</strong> — Guest Author (2025). Fragmented reporting playbook. <a href="#">Summary</a></li>
-            <li><strong>Strategic Finance</strong> — Feature (2025). Mindful automation in finance. <a href="#">In press</a></li>
-            <li><strong>Women in Analytics</strong> — Reviewer & contributor (2024–).</li>
-          </ul>
-        </div>
-        <div class="card">
-          <p class="meta">Topics: Data governance, CFO dashboards, finance automation, decision intelligence, practical analytics for operators.</p>
-          <div class="pill"><span>Talks</span><span>Panels</span><span>Workshops</span></div>
-        </div>
+      <div class="card">
+        <h3><a href="https://www.cfo.com/news/5-steps-to-fix-fragmented-reporting-spreadsheets-automation-data-erp/756723/" target="_blank">5 Steps to Fix Fragmented Reporting</a></h3>
+        <p><strong>Published at CFO.com</strong></p>
+        <p>In this article, Swetha outlines a five-step playbook for finance teams to stabilize fragmented reporting caused by spreadsheets, siloed systems, and inconsistent automation. The piece emphasizes practical steps that CFOs and controllers can apply to align data, strengthen governance, and ensure reporting becomes decision-ready.</p>
       </div>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
-      <div class="two">
-        <div class="card">
-          <p>Manager, FP&A Business Systems at Kaiser Aluminum. I design reporting architectures (Bronze→Silver→Gold), build parameter-driven Power BI experiences, and connect finance logic to data reality. My superpower: turning sprawling spreadsheets into one source of truth.
-          </p>
-          <p class="meta">Tools: Power BI, DAX, SQL, Microsoft Fabric, Power Automate · Domains: AP/AR/GL, Procurement, Cash Forecasting</p>
-        </div>
-        <div class="card">
-          <ul>
-            <li>Head TA — MBA 562, Business Analytics</li>
-            <li>Publications — CFO.com, Strategic Finance</li>
-            <li>Interests — Data governance, decision design, teaching</li>
-          </ul>
-        </div>
+      <div class="card">
+        <h3>What It Really Takes to Make Finance Automation Drive Change</h3>
+        <p><strong>Published at Strategic Finance</strong> (link coming soon)</p>
+        <p>This article shares a real-world case study demonstrating how automation succeeds when paired with governance and stakeholder alignment. Using the Deming Cycle as a guiding framework, Swetha explains how finance teams can shift from isolated tech pilots to meaningful process transformation.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.womeninanalytics.com/blog-posts/what-it-really-takes-to-make-finance-automation-drive-change" target="_blank">Reframing Automation in Finance</a></h3>
+        <p><strong>Published at Women in Analytics Blog</strong></p>
+        <p>This blog post reframes the conversation around automation in finance, highlighting that the true value lies not in automating tasks for efficiency alone, but in aligning automation with strategic finance outcomes and human decision-making. Women in Analytics provides a platform for diverse voices shaping the future of analytics.</p>
       </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <div class="two">
-        <div class="card">
-          <p>Email: <a id="emailLink" href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" rel="noreferrer">linkedin.com/in/your-linkedin</a></p>
-        </div>
-        <form class="card" name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
-          <label class="meta">Name<br/><input name="name" required style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--ring);background:transparent;color:var(--text)"></label>
-          <label class="meta">Email<br/><input name="email" type="email" required style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--ring);background:transparent;color:var(--text)"></label>
-          <label class="meta">Message<br/><textarea name="message" rows="4" required style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--ring);background:transparent;color:var(--text)"></textarea></label>
-          <button class="btn primary" type="submit">Send</button>
-          <p class="note">This simple form works on Netlify. On GitHub Pages, replace with an email link or Formspree.</p>
-        </form>
+      <div class="card">
+        <p>Email: <a href="mailto:swetha.pandiri15@gmail.com">swetha.pandiri15@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/swetha-pandiri/" target="_blank">linkedin.com/in/swetha-pandiri</a></p>
       </div>
     </section>
 
-    <div class="footer">
-      <span>© <span id="year"></span> Swetha Pandiri</span>
-      <span class="meta">Built with plain HTML/CSS — hosted on GitHub Pages</span>
-    </div>
+    <footer>
+      <p>© <span id="year"></span> Swetha Pandiri · Built with HTML/CSS · Hosted on GitHub Pages</p>
+    </footer>
   </div>
-
   <script>
-    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Copy email to clipboard
-    document.getElementById('copyEmail').addEventListener('click', () => {
-      const email = document.getElementById('emailLink').textContent.trim();
-      navigator.clipboard.writeText(email).then(()=>{
-        const btn = document.getElementById('copyEmail');
-        const prev = btn.textContent; btn.textContent = 'Copied ✔';
-        setTimeout(()=> btn.textContent = prev, 1200);
-      });
-    });
-
-    // Simple project filters
-    const chips = document.querySelectorAll('.chip');
-    const cards = document.querySelectorAll('#projectGrid .proj');
-    chips.forEach(ch => ch.addEventListener('click', () => {
-      chips.forEach(c=>c.classList.remove('active')); ch.classList.add('active');
-      const tag = ch.dataset.filter;
-      cards.forEach(card => {
-        const tags = card.getAttribute('data-tags');
-        card.style.display = (tag==='all' || tags.includes(tag)) ? 'flex' : 'none';
-      });
-    }));
   </script>
 </body>
 </html>
