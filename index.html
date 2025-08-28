@@ -21,6 +21,13 @@
     .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
     @media(max-width:700px){.grid{grid-template-columns:1fr}}
     footer{margin-top:40px;padding-top:16px;border-top:1px solid #1e293b;color:#94a3b8}
+    /* timeline */
+    .timeline{position:relative;padding-left:24px}
+    .timeline:before{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:#1e293b}
+    .t-item{position:relative;margin:14px 0;padding-left:12px}
+    .t-item:before{content:"";position:absolute;left:-2px;top:6px;width:10px;height:10px;border-radius:50%;background:#60a5fa;box-shadow:0 0 0 3px #0b1020}
+    .t-title{font-weight:700}
+    .t-meta{color:#94a3b8;font-size:13px}
   </style>
 </head>
 <body>
@@ -29,8 +36,9 @@
       <h1>Swetha Pandiri</h1>
       <nav>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
+        <a href="#milestones">Milestones</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -38,27 +46,8 @@
     <section id="about">
       <h2>About</h2>
       <div class="card">
-        <p>Swetha Pandiri is a Financial Systems Manager at Kaiser Aluminum, where she leads enterprise reporting and automation initiatives. She bridges finance strategy with technology execution, designing scalable solutions that transform manual processes into insight-driven systems, enabling finance to shift from reactive reporting to strategic decision-making.</p>
-        <p class="meta">Career Timeline:</p>
-        <ul>
-          <li>Financial Data Analyst at Deloitte (2018–2022)</li>
-          <li>Masters in Business Analytics, University of Illinois Urbana-Champaign (2023)</li>
-          <li>FP&A Business Systems Manager — Kaiser Aluminum (2023–Present)</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="card">
-        <h3>Airbnb Host Analysis</h3>
-        <p>Analyzed Airbnb listings in the US using Tableau to identify factors influencing pricing, and built a regression-based predictive model in R for estimating the price of new listings with 93% accuracy.</p>
-        <a href="https://public.tableau.com/app/profile/swetha.pandiri/viz/Airbnb_Host_Analysis_Group5/AirbnbHostAnalysis" target="_blank">View Project →</a>
-      </div>
-      <div class="card">
-        <h3>Humana-Mays Healthcare Analytics Case Competition</h3>
-        <p>Ranked among the Top 50 teams in the US for implementing an XGBoost model with 87% accuracy to predict Medicare members at risk of housing insecurity. Balanced quantitative modeling with qualitative objectives to maximize business and societal value.</p>
-        <a href="https://mays.tamu.edu/humana-tamu-analytics/round-1-results/" target="_blank">Learn More →</a>
+        <p><strong>Bio</strong></p>
+        <p>I'm a finance systems and analytics leader who loves turning messy reporting into reliable decision intelligence. I began my career at Deloitte (USI) working with financial data, where I learned how processes actually break in the real world—inside spreadsheets, handoffs, and unclear ownership. To anchor my technical toolkit, I completed a master’s in Business Analytics at the University of Illinois, focusing on practical modeling, data engineering fundamentals, and communicating insights for operators and executives. Today, as FP&A Business Systems Manager at Kaiser Aluminum, I lead enterprise reporting and automation initiatives—designing architectures, Power BI experiences, and governance practices that help CFOs and controllers move from reactive reporting to repeatable, CFO‑ready insight. My work centers on scalability, clarity, and change adoption so solutions stick long after the first demo.</p>
       </div>
     </section>
 
@@ -67,17 +56,53 @@
       <div class="card">
         <h3><a href="https://www.cfo.com/news/5-steps-to-fix-fragmented-reporting-spreadsheets-automation-data-erp/756723/" target="_blank">5 Steps to Fix Fragmented Reporting</a></h3>
         <p><strong>Published at CFO.com</strong></p>
-        <p>In this article, Swetha outlines a five-step playbook for finance teams to stabilize fragmented reporting caused by spreadsheets, siloed systems, and inconsistent automation. The piece emphasizes practical steps that CFOs and controllers can apply to align data, strengthen governance, and ensure reporting becomes decision-ready.</p>
+        <p><em>Article summary:</em> A practical five‑step playbook to stabilize fragmented reporting caused by spreadsheets, siloed ERPs, and ad‑hoc automations. The piece focuses on clarifying ownership, instituting lightweight governance, rationalizing measures, and building an executive snapshot that drills into action—so finance teams can deliver decision‑ready reporting fast.</p>
+        <p class="meta"><em>About CFO.com:</em> CFO.com is a leading publication for senior finance leaders, covering strategy, reporting, technology, and risk—widely read by CFOs, controllers, and finance executives.</p>
       </div>
       <div class="card">
         <h3>What It Really Takes to Make Finance Automation Drive Change</h3>
         <p><strong>Published at Strategic Finance</strong> (link coming soon)</p>
-        <p>This article shares a real-world case study demonstrating how automation succeeds when paired with governance and stakeholder alignment. Using the Deming Cycle as a guiding framework, Swetha explains how finance teams can shift from isolated tech pilots to meaningful process transformation.</p>
+        <p><em>Article summary:</em> A case‑led walkthrough of how automation efforts produce lasting value only when paired with governance, process design, and stakeholder alignment. Using a Deming Cycle lens (Plan‑Do‑Check‑Act), it shows how to move from tools‑first pilots to outcomes‑driven transformation.</p>
+        <p class="meta"><em>About Strategic Finance:</em> Strategic Finance (IMA) publishes practitioner‑focused research and features for management accountants and finance leaders, emphasizing actionable methods and real‑world rigor.</p>
       </div>
       <div class="card">
         <h3><a href="https://www.womeninanalytics.com/blog-posts/what-it-really-takes-to-make-finance-automation-drive-change" target="_blank">Reframing Automation in Finance</a></h3>
-        <p><strong>Published at Women in Analytics Blog</strong></p>
-        <p>This blog post reframes the conversation around automation in finance, highlighting that the true value lies not in automating tasks for efficiency alone, but in aligning automation with strategic finance outcomes and human decision-making. Women in Analytics provides a platform for diverse voices shaping the future of analytics.</p>
+        <p><strong>Women in Analytics — Blog</strong></p>
+        <p><em>Post summary:</em> Reframes automation as a path to better decisions—not just faster tasks. It highlights aligning projects to business outcomes, measuring adoption, and building credibility through governance.
+        </p>
+        <p class="meta"><em>About Women in Analytics (WIA):</em> WIA elevates diverse perspectives in analytics through content, community, and events—spotlighting practical data work that drives impact.</p>
+      </div>
+    </section>
+
+    <section id="milestones">
+      <h2>Milestones</h2>
+      <div class="card timeline">
+        <div class="t-item">
+          <div class="t-title">FP&A Business Systems Manager — Kaiser Aluminum</div>
+          <div class="t-meta">Owning enterprise reporting architecture, automation, and CFO‑ready analytics.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-title">Masters in Business Analytics — University of Illinois Urbana‑Champaign</div>
+          <div class="t-meta">Built depth in modeling, data storytelling, and scalable analytics practices.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-title">Financial Data Analyst — Deloitte, USI</div>
+          <div class="t-meta">Hands‑on financial data work; learned how processes break and how to fix them.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Airbnb Host Analysis</h3>
+        <p>Analyzed U.S. Airbnb listings in Tableau to identify pricing drivers and built a regression‑based model in R to estimate listing prices with ~93% accuracy.</p>
+        <a href="https://public.tableau.com/app/profile/swetha.pandiri/viz/Airbnb_Host_Analysis_Group5/AirbnbHostAnalysis" target="_blank">View Project →</a>
+      </div>
+      <div class="card">
+        <h3>Humana‑Mays Healthcare Analytics Case Competition</h3>
+        <p>Top‑50 nationally. Built an XGBoost model (≈87% accuracy) to identify Medicare members at risk of housing insecurity; balanced quantitative performance with qualitative impact and interpretability.</p>
+        <a href="https://mays.tamu.edu/humana-tamu-analytics/round-1-results/" target="_blank">Learn More →</a>
       </div>
     </section>
 
